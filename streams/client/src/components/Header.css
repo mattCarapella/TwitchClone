@@ -32,7 +32,7 @@
   margin-right: 20px;
 }
 
-a {
+.otherLinks a, .headerTitle a {
   color: #ffc600;
   text-decoration: none;
   font-family: 'Dosis';
