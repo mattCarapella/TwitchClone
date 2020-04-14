@@ -10,7 +10,7 @@ const Header = () => {
         <Link to='/'>Twitched</Link>
       </div>
       <div className='otherLinks'>
-        <Link to='/'>All Streams</Link>
+        <Link to='/' className='otherLinks__all-streams'>All Streams</Link>
         <GoogleAuth />
       </div>
     </div>

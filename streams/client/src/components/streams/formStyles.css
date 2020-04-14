@@ -44,6 +44,10 @@
   background: gold;
 }
 
+.ui__form button:focus {
+  outline:none;
+}
+
 .err__msg{
   font-size: 0.8rem;
   letter-spacing: 1.1px;
