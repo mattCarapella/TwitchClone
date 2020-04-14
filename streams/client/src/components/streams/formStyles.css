@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.ui__form {
+  display: grid;
+  grid-gap: 10px;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  border-radius: 0.5rem;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  padding: 1em;
+  font-family: 'Lato';
+}
+
+.ui__form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+  padding: 0.7em;
+  border-radius: 0.4rem;
+}
+
+.ui__form input:focus {
+  outline: 3px solid gold;
+}
+
+.ui__form label {
+  font-size: 1.0rem;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+.ui__form button {
+  background: #EDEEEF;
+  font-size: 0.9rem;
+  font-family: 'Lato';
+  padding: 0.7em;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 0.4em;
+  margin-top: 15px;
+}
+
+.ui__form button:hover {
+  background: gold;
+}
+
+.err__msg{
+  font-size: 0.8rem;
+  letter-spacing: 1.1px;
+  color:red;
+}
