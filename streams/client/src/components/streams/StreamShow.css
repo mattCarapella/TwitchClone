@@ -1,0 +1,26 @@
+@import '../App.css';
+
+.show-stream__container {
+  padding: 1.5em;
+}
+
+.show-stream__video {
+
+}
+
+.show-stream__footer {
+  padding: 1.5em;
+}
+
+.show-stream__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.95em;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.show-stream__description {
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-size: 1.1em;
+}

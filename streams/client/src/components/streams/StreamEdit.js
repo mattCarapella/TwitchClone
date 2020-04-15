@@ -22,7 +22,10 @@ class StreamEdit extends Component {
     return (
       <div>
         <h3>Edit your Stream.</h3>
-        <StreamForm initialValues={{ title: this.props.stream.title, description: this.props.stream.description }} parentSubmit={this.onSubmit} />
+        <StreamForm 
+          initialValues={{ title: this.props.stream.title, description: this.props.stream.description }} 
+          parentSubmit={this.onSubmit} 
+        />
       </div>
     );
   };

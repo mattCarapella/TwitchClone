@@ -1,31 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+@import './App.css';
 
 .headerWrapper {
-  background: #7947CD;
+  background-image: linear-gradient(to right, #5A16CC, #7947CD, #5A16CC);
   height: 5%;
   padding: 1%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Nanum Gothic';
 }
 
 .headerTitle {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 800 !important;
   line-height: 1.25;
-  /* color: #333333; */
   text-shadow:  0px 4px 3px rgba(0,0,0,0.2),
                 0px 2px 3px rgba(0,0,0,0.1),
                 0px 8px 3px rgba(0,0,0,0.1);
+  padding-left: 10px;
 }
 
 .otherLinks {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 400;
   line-height: 1.25;
   color: #333333;
   display: flex;
   align-items:center;
+  padding-right: 30px;
+}
+
+.otherlinks__create-icon {
+  margin-top: 9px !important; 
+  color: #F4F4F4;
+}
+
+.otherlinks__create-icon:hover {
+  color: #F2D572
 }
 
 .otherLinks__all-streams {
@@ -33,18 +44,24 @@
 }
 
 .otherLinks a, .headerTitle a {
-  color: #ffc600;
+  color: #F4F4F4;
   text-decoration: none;
-  font-family: 'Dosis';
-  font-weight: 500;
   letter-spacing: 2.4px;
   text-shadow:  0px 4px 3px rgba(0,0,0,0.3),
                 0px 2px 3px rgba(0,0,0,0.1),
                 0px 8px 3px rgba(0,0,0,0.1);
 }
 
-a:hover {
-  color: #562AA1;
+.headerTitle a {
+  letter-spacing: 0.32em !important;
+}
+
+.otherlinks__link {
+  padding-left: 30px;
+}
+
+.otherLinks a:hover {
+  color: #F2D572;
 }
 
 .otherLinks > * {

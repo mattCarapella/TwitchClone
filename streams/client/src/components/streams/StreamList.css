@@ -1,75 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
+@import '../App.css';
 
-.list {
-  display: grid;
-  grid-gap: 1.2rem;
+.item__link {
+  text-decoration: none;
 }
 
-.content {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.description {
-  font-size: 1.1rem;
-}
-
-.header {
-  background: #E6F2F5;
-  padding: 10px;
-}
-
-.editBtn, .deleteBtn {
-  box-sizing: border-box;
+.item {
+  padding: 15px;
+  height: 21.5em;
+  max-width: 350px;
   position: relative;
-  margin: 0.2em;
-  padding: 0 15px 0 15px;
-  border: none;
-  text-align: center;
-  line-height: 34px;
-  white-space: nowrap;
-  border-radius: 0.2em;
-  color: #000;
-  background: burlywood;
+  overflow: hidden;
+  font-family: 'Source Sans Pro';
+  background-color: #fff;
+  -webkit-box-shadow: 7px 4px 11px 4px rgba(0,0,0,0.15);
+  -moz-box-shadow: 7px 4px 11px 4px rgba(0,0,0,0.15);
+  box-shadow: 7px 4px 11px 4px rgba(0,0,0,0.15);
+  transition: background-color 0.5s;
 }
 
-.deleteBtn {
-  background: #DD4B39;
-  color: #fff;
-}
-
-.editBtn:hover, .deleteBtn:hover {
-  background: #E74B37;
+.item:hover {
+  background-color: #F3F3F3;
+  transition: background-color 0.5s;
   cursor: pointer;
 }
 
-.createBtn{
-  width: 15%;
-  border: 1px solid #000;
-  border-radius: 0.3em;
+.item__preview {
+  display: relative;
+  height: 240px;
+  background: #D6D6D6;
+}
+
+.item__preview--buttons {
+  /* grid-column-start: 11; 
+  grid-column-end: 12; 
+  grid-row-start: 1; 
+  grid-row-end: 3; */ 
+  position: absolute;
+  padding: 5px;
+  right: 4%;
+  bottom: 35%;
+}
+
+.edit-btn, .delete-btn {
+  box-sizing: border-box; 
+  margin: 0.2em;
+  border: none;
+  border-radius: 10em;
   text-align: center;
-  padding: 10px;
-  background-color: #7947CD;
-  color: #ffc600;
-  font-family: 'Dosis';
-  letter-spacing: 1.8px;
-  font-weight: 500;
-  margin-top: 20px;
+  line-height: 14px;
+  white-space: nowrap;
+  color: #000;
+  background-color: #F7F7F7;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
-.createBtn>a{
-  color: #ffc600;
-  text-decoration: none;
-  
+.edit-btn:hover, .delete-btn:hover {
+  cursor: pointer;
+  background-color: #9B9B9B;
+  color: #fff;
+  transition: background-color 0.1s;
+  transition: color 0.1s;
 }
 
-.createBtn:hover{
-  background: #612EB0;
-}
-
-.linkBtn{
+.link-btn {
   color: black;
   text-decoration: none;
-  padding: 0.6rem;
+  padding: 10px 7px 6px 8px;
+}
+
+
+.item__preview--dummy-text {
+  text-align: center;
+  padding-top: 30%;
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: .09em;
+  color: #000;
+  text-decoration: none;
+}
+
+.item__footer {
+  display: grid;
+}
+
+.item__footer--title {
+  /* grid-column-start: 1; 
+  grid-column-end: 11; 
+  grid-row-start: 1; 
+  grid-row-end: 2;  */
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 10px 0 0;
+  max-height: 45px;
+  overflow: hidden;
+  color: #000;
+  transition: color .7s ease-in-out;
+  -moz-transition: color .7s ease-in-out;
+  -webkit-transition: color .7s ease-in-out;
+  text-decoration: none;
+}
+
+.item__footer--title:hover {
+  color: #7947CD;
+}
+
+.item__footer--description {
+  /* grid-column-start: 1; 
+  grid-column-end: 11; 
+  grid-row-start: 2; 
+  grid-row-end: 3;  */
+  font-size: 0.9rem;
+  padding: 5px 10px 0 0;
+  color: #000;
+}
+
+
+.list__container {
+  display: grid;
+  grid-template-columns: repeat( 4, minmax(250px, 1fr) );
+  padding: 30px;
+  grid-gap: 1.2rem;
+  grid-auto-rows: minmax(100px, auto);
+  font-family: 'Nanum Gothic';
+}
+
+.content {
+  margin-bottom: 5px;
+}
+
+.stream-list__header {
+  padding: 40px 0px 20px 40px;
+  font-family: 'Lato';
+  font-size: 2.9em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-shadow:  0px 4px 3px rgba(0,0,0,0.2),
+                0px 2px 3px rgba(0,0,0,0.1),
+                0px 8px 3px rgba(0,0,0,0.1);
 }

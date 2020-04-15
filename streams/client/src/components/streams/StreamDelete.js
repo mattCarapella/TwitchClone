@@ -3,6 +3,9 @@ import Modal from '../Modal';
 import { connect } from 'react-redux';
 import { fetchStream, deleteStream } from '../../actions';
 import history from '../../history';
+import { FaRegCheckCircle, FaRegTimesCircle } from 'react-icons/fa';
+import './StreamDelete.css';
+
 
 class StreamDelete extends Component {
 
@@ -13,9 +16,11 @@ class StreamDelete extends Component {
   renderActions() {
     const id = this.props.match.params.id;
     return ( 
-      <div className="modal-buttons">
-        <button onClick={() => this.props.deleteStream(id)} className="deleteBtn">Delete</button>
-        <button onClick={() => history.push('/')} to={'/'} className="editBtn">Cancel</button>
+      <div className="modal-buttons__container">
+        <div className='modal-buttons'>
+          <button onClick={() => this.props.deleteStream(id)} className="modal__delete-btn"><FaRegCheckCircle /></button>
+          <button onClick={() => history.push('/')} to={'/'} className="modal__edit-btn"><FaRegTimesCircle /></button>
+        </div>
       </div>
     );
   };
@@ -24,13 +29,13 @@ class StreamDelete extends Component {
     if (!this.props.stream) {
       return 'Are you sure you want to delete this stream?';
     }
-    return `Are you sure you want to delete the stream: ${this.props.stream.title}?`
+    return `Are you sure you want to delete the stream: "${this.props.stream.title}"?`
   };
   
   render() {
     return (
       <Modal 
-        title='Delete Stream'
+        title='Warning!'
         content={this.renderContent()}
         actions={this.renderActions()}
         onDismiss={() => history.push('/')}

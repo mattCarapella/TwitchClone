@@ -3,17 +3,23 @@
 .ui__form {
   display: grid;
   grid-gap: 10px;
-  background: #f9f9f9;
-  border: 1px solid #c1c1c1;
-  border-radius: 0.5rem;
   margin: 2rem auto 0 auto;
-  max-width: 600px;
+  max-width: 60%;
   padding: 1em;
-  font-family: 'Lato';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .ui__form input {
   background: #fff;
+  font-size: 1.1em;
+  border: 1px solid #9c9c9c;
+  padding: 0.7em;
+  border-radius: 0.4rem;
+}
+
+.ui__form textarea {
+  background: #fff;
+  font-size: 1.1em;
   border: 1px solid #9c9c9c;
   padding: 0.7em;
   border-radius: 0.4rem;
@@ -23,10 +29,14 @@
   outline: 3px solid gold;
 }
 
+.ui__form textarea:focus {
+  outline: 3px solid gold;
+}
+
 .ui__form label {
   font-size: 1.0rem;
   font-weight: 600;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.25rem;
 }
 
 .ui__form button {
@@ -45,15 +55,25 @@
 }
 
 .ui__form button:focus {
-  outline:none;
+  outline: none;
+}
+
+/* .ui__form--title {
+  font-size: 3em;
+}
+
+.ui__form--description {
+  font-size: 3rem;
+} */
+
+
+.input-field__large {
+  border: 1px solid #9c9c9c;
+  border-radius: 1.2em;
 }
 
 .err__msg{
   font-size: 0.8rem;
   letter-spacing: 1.1px;
   color:red;
-}
-
-h3 {
-  text-align: center;
 }

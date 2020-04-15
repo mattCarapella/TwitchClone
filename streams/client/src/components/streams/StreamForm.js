@@ -15,10 +15,32 @@ class StreamForm extends Component {
     return (
       <Fragment>
         <label>{label}</label>
-        <input {...input} />
+        { label === 'Title' ?
+          <input {...input} className='input-field' /> :
+          <textarea {...input} className='input-field' rows={10} />
+        }
         {this.renderError(meta)}
       </Fragment>
     );
+    
+    // if (label === 'Title') {
+    //   return (
+    //     <Fragment>
+    //       <label>{label}</label>
+    //       <input {...input} className='input-field' />
+    //       {this.renderError(meta)}
+    //     </Fragment>
+    //   );
+    // }
+    // else {
+    //   return (
+    //     <Fragment>
+    //       <label>{label}</label>
+    //       <textarea {...input} className='input-field' rows={10} />
+    //       {this.renderError(meta)}
+    //     </Fragment>
+    //   );
+    // }
   };
 
   onSubmitForm = (formValues) => {

@@ -1,0 +1,32 @@
+.modal-buttons__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal__edit-btn {
+  font-size: 3em;
+  background: none;
+  border: none;
+  color: red;
+}
+
+.modal__delete-btn {
+  font-size: 3em;
+  background: none;
+  border: none;
+  color: green;
+}
+
+.modal__delete-btn:hover {
+  cursor: pointer;
+}
+
+.modal__edit-btn:hover {
+  cursor: pointer;
+}
+
+.modal__edit-btn:focus, .modal__delete-btn:focus {
+  text-decoration: none;
+  outline: none;
+}
